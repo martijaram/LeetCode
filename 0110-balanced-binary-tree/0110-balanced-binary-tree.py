@@ -13,7 +13,6 @@ class Solution:
     
     def preorder(self, root: Optional[TreeNode]) -> int:
         if (root):
-            print(root.val)            
             left, right = self.preorder(root.left), self.preorder(root.right)
             
             if ((left[0] and right[0]) == False):
