@@ -8,6 +8,7 @@ class Solution:
     possibles = []
     def hasCycle(self, head: Optional[ListNode]) -> bool:
         self.possibles = []
+        
         return self.meh(head)
         
         
@@ -17,8 +18,6 @@ class Solution:
         
     def meh(self, head: Optional[ListNode]):
         if (id(head) in self.possibles):
-            print(head.val)
-            print(self.possibles)
             return True
         
         if (head):
