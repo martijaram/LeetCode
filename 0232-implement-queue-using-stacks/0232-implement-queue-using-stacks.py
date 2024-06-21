@@ -22,11 +22,8 @@ class MyQueue:
             self.leftlink.append(element)
             
         self.leftlink.append(x)
-        
-        print(self.leftlink)
-            
+                    
         while (self.leftlink != []):
-            print("it works: " + str(x))
             
             element = self.leftlink.pop()
             self.rightlink.append(element)
