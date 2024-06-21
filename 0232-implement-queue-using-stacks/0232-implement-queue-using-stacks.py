@@ -28,8 +28,6 @@ class MyQueue:
             element = self.leftlink.pop()
             self.rightlink.append(element)
         
-        print(self.rightlink)
-
     def pop(self) -> int:
         if (self.leftlink is not []):
             return self.rightlink.pop()
