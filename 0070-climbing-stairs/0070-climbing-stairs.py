@@ -4,12 +4,10 @@ class Solution:
         back1 = 1
         nextup = 1
         
-        i = 2
-        while i <= n:
+        for i in range(2, n+1):
             nextup = back0 + back1
             back0 = back1
             back1 = nextup
-            i += 1
             
         return nextup
             
