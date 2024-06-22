@@ -1,13 +1,14 @@
 class Solution:
     def climbStairs(self, n: int) -> int:
-        back0 = 1
         back1 = 1
         nextup = 1
         
-        for i in range(2, n+1):
-            nextup = back0 + back1
-            back0 = back1
-            back1 = nextup
+        i = 2
+        while i <= n:
+            nextup = back1 + nextup
+            back1 = nextup - back1
+            
+            i += 1
             
         return nextup
             
