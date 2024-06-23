@@ -16,19 +16,12 @@ class Solution:
         result = 0
         carry = 0
         
-        print('a: ' + a)
-        print('b: ' + b)
         
         i = 0
         while i < la:
             result = (int(a[-i - 1]) + int(b[-i - 1]) + carry)
             final = str(result%2) + final
             carry = int(result > 1)
-            
-            print(result)
-            print(final)
-            print(carry)
-            print("---")
             
             
             i += 1
